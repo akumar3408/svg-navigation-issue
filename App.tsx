@@ -1,7 +1,8 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Svg, {Circle} from 'react-native-svg';
 
@@ -10,7 +11,7 @@ type RootStackParamList = {
   Details: undefined;
 };
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createStackNavigator<RootStackParamList>();
 
 const HomeScreen = ({navigation}: {navigation: any}) => {
   return (
